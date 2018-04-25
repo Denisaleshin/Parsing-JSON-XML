@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB20B5C0208F0B1D00797ADC /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20B5BF208F0B1D00797ADC /* JSONParsing.swift */; };
+		BB20B5C42090686900797ADC /* XMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20B5C32090686900797ADC /* XMLParsing.swift */; };
+		C711DA6C1E500AE100A89234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA6B1E500AE100A89234 /* AppDelegate.swift */; };
+		C711DA711E500AE100A89234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C711DA6F1E500AE100A89234 /* Main.storyboard */; };
+		C711DA731E500AE100A89234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C711DA721E500AE100A89234 /* Assets.xcassets */; };
+		C711DA761E500AE100A89234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C711DA741E500AE100A89234 /* LaunchScreen.storyboard */; };
+		C711DA7E1E50190300A89234 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA7D1E50190300A89234 /* ProductListViewController.swift */; };
+		C711DA821E5083A800A89234 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA811E5083A800A89234 /* Product.swift */; };
+		C711DA841E5083AE00A89234 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA831E5083AE00A89234 /* Post.swift */; };
+		C711DA851E50856000A89234 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA7F1E50191000A89234 /* PostListViewController.swift */; };
+		C711DA871E5088E200A89234 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA861E5088E200A89234 /* PostViewController.swift */; };
+		C711DA891E508E0000A89234 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711DA881E508E0000A89234 /* ProductViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB20B5BF208F0B1D00797ADC /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		BB20B5C32090686900797ADC /* XMLParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParsing.swift; sourceTree = "<group>"; };
+		C711DA681E500AE100A89234 /* hplus-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hplus-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C711DA6B1E500AE100A89234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C711DA701E500AE100A89234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C711DA721E500AE100A89234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C711DA751E500AE100A89234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C711DA771E500AE100A89234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C711DA7D1E50190300A89234 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		C711DA7F1E50191000A89234 /* PostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		C711DA811E5083A800A89234 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C711DA831E5083AE00A89234 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C711DA861E5088E200A89234 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		C711DA881E508E0000A89234 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C711DA651E500AE100A89234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C711DA5F1E500AE100A89234 = {
+			isa = PBXGroup;
+			children = (
+				C711DA6A1E500AE100A89234 /* Application */,
+				C711DA691E500AE100A89234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C711DA691E500AE100A89234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C711DA681E500AE100A89234 /* hplus-sports.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C711DA6A1E500AE100A89234 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C711DA6B1E500AE100A89234 /* AppDelegate.swift */,
+				C711DA6F1E500AE100A89234 /* Main.storyboard */,
+				C711DA721E500AE100A89234 /* Assets.xcassets */,
+				C711DA741E500AE100A89234 /* LaunchScreen.storyboard */,
+				C711DA771E500AE100A89234 /* Info.plist */,
+				C792304E1E9A37DC0022B417 /* Products */,
+				C792304F1E9A37EF0022B417 /* Posts */,
+			);
+			name = Application;
+			path = "hplus-sports";
+			sourceTree = "<group>";
+		};
+		C792304E1E9A37DC0022B417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C711DA7D1E50190300A89234 /* ProductListViewController.swift */,
+				BB20B5C32090686900797ADC /* XMLParsing.swift */,
+				BB20B5BF208F0B1D00797ADC /* JSONParsing.swift */,
+				C711DA881E508E0000A89234 /* ProductViewController.swift */,
+				C711DA811E5083A800A89234 /* Product.swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C792304F1E9A37EF0022B417 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				C711DA7F1E50191000A89234 /* PostListViewController.swift */,
+				C711DA861E5088E200A89234 /* PostViewController.swift */,
+				C711DA831E5083AE00A89234 /* Post.swift */,
+			);
+			name = Posts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C711DA671E500AE100A89234 /* hplus-sports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C711DA7A1E500AE100A89234 /* Build configuration list for PBXNativeTarget "hplus-sports" */;
+			buildPhases = (
+				C711DA641E500AE100A89234 /* Sources */,
+				C711DA651E500AE100A89234 /* Frameworks */,
+				C711DA661E500AE100A89234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hplus-sports";
+			productName = "hplus-sports";
+			productReference = C711DA681E500AE100A89234 /* hplus-sports.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C711DA601E500AE100A89234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Lynda.com;
+				TargetAttributes = {
+					C711DA671E500AE100A89234 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = HVQ3QCAM29;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C711DA631E500AE100A89234 /* Build configuration list for PBXProject "hplus-sports" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C711DA5F1E500AE100A89234;
+			productRefGroup = C711DA691E500AE100A89234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C711DA671E500AE100A89234 /* hplus-sports */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C711DA661E500AE100A89234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C711DA761E500AE100A89234 /* LaunchScreen.storyboard in Resources */,
+				C711DA731E500AE100A89234 /* Assets.xcassets in Resources */,
+				C711DA711E500AE100A89234 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C711DA641E500AE100A89234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C711DA851E50856000A89234 /* PostListViewController.swift in Sources */,
+				C711DA7E1E50190300A89234 /* ProductListViewController.swift in Sources */,
+				BB20B5C0208F0B1D00797ADC /* JSONParsing.swift in Sources */,
+				C711DA871E5088E200A89234 /* PostViewController.swift in Sources */,
+				C711DA821E5083A800A89234 /* Product.swift in Sources */,
+				C711DA891E508E0000A89234 /* ProductViewController.swift in Sources */,
+				C711DA841E5083AE00A89234 /* Post.swift in Sources */,
+				C711DA6C1E500AE100A89234 /* AppDelegate.swift in Sources */,
+				BB20B5C42090686900797ADC /* XMLParsing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C711DA6F1E500AE100A89234 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C711DA701E500AE100A89234 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C711DA741E500AE100A89234 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C711DA751E500AE100A89234 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C711DA781E500AE100A89234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C711DA791E500AE100A89234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C711DA7B1E500AE100A89234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HVQ3QCAM29;
+				INFOPLIST_FILE = "hplus-sports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lynda.ios.demo.hplus-sports";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C711DA7C1E500AE100A89234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HVQ3QCAM29;
+				INFOPLIST_FILE = "hplus-sports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lynda.ios.demo.hplus-sports";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C711DA631E500AE100A89234 /* Build configuration list for PBXProject "hplus-sports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C711DA781E500AE100A89234 /* Debug */,
+				C711DA791E500AE100A89234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C711DA7A1E500AE100A89234 /* Build configuration list for PBXNativeTarget "hplus-sports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C711DA7B1E500AE100A89234 /* Debug */,
+				C711DA7C1E500AE100A89234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C711DA601E500AE100A89234 /* Project object */;
+}
