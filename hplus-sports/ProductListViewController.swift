@@ -33,6 +33,36 @@ final class ProductListViewController: UIViewController
         guard let selectedIndexPath = productsTableView.indexPathForSelectedRow else { return }
         productsTableView.deselectRow(at: selectedIndexPath, animated: animated)
     }
+    enum HTTPEror: Error {
+        case invalidResponse
+        case invalidStatusCode
+        case requestFaled(statusCode: Int, message: String)
+    }
+    
+    enum HTTPStatusCode: Int {
+        case success = 200
+        case notFound = 404
+        var isSuccessful: Bool {
+            return (200..<300).contains(rawValue)
+        }
+        var message: String {
+            return HTTPURLResponse.localizedString(forStatusCode: rawValue)
+        }
+        
+    }
+    
+    func validate(_ response: URLResponse?) throws {
+        guard let response = response as? HTTPURLResponse else {
+            throw HTTPEror.invalidResponse
+        }
+        guard let status = HTTPStatusCode(rawValue: response.statusCode) else {
+            throw HTTPEror.invalidStatusCode
+        }
+        
+        if !status.isSuccessful {
+            throw HTTPEror.requestFaled(statusCode: status.rawValue, message: status.message)
+        }
+    }
     
     let session: URLSession = .shared
     private func loadProducts()
@@ -42,6 +72,7 @@ final class ProductListViewController: UIViewController
             guard let data = data else { return }
             
             do {
+            try self.validate(response)
              self.products = try parseXML(data: data, elementName: "product")
                 
             } catch {
